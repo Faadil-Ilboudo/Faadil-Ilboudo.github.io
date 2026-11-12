@@ -1,0 +1,488 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description"
+        content="Portfolio de Faadil Ilboudo, étudiant en informatique à HESTIM School, Casablanca. Découvrez mes projets et mon parcours.">
+
+  <meta name="theme-color" content="#0b0b12">
+  <title>Faadil Ilboudo | Portfolio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="background-glow"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- NAVIGATION -->
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#accueil" class="logo">
+        <span class="logo-bracket">&lt;</span>FI<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle"
+              aria-label="Ouvrir le menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+        <li><a href="#apropos" class="nav-link">À propos</a></li>
+        <li><a href="#competences" class="nav-link">Compétences</a></li>
+        <li><a href="#projets" class="nav-link">Projets</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li>
+          <button class="theme-toggle" id="themeToggle"
+                  aria-label="Changer de thème">
+            <i class="fa-solid fa-sun"></i>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ACCUEIL -->
+    <section class="hero section container" id="accueil">
+      <div class="hero-content reveal">
+        <div class="availability">
+          <span class="status-dot"></span>
+          Étudiant en informatique · Casablanca
+        </div>
+
+        <p class="eyebrow">BONJOUR, JE SUIS</p>
+
+        <h1>Faadil <span class="gradient-text">Ilboudo.</span></h1>
+
+        <h2 class="hero-subtitle">
+          Je construis mon avenir dans le
+          <span id="typedText">développement informatique.</span>
+          <span class="typing-cursor">|</span>
+        </h2>
+
+        <p class="hero-description">
+          Étudiant en première année de cycle préparatoire informatique
+          à HESTIM School, Casablanca. Je développe mes connaissances,
+          explore les technologies et transforme mes idées en projets.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projets" class="btn btn-primary">
+            Découvrir mes projets
+            <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+          <a href="#contact" class="btn btn-secondary">
+            Me contacter
+          </a>
+        </div>
+
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/faadil-ilboudo-942772329/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+
+          <a href="https://github.com/"
+             target="_blank" rel="noopener noreferrer"
+             aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <span class="social-caption">Retrouve-moi en ligne</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <div class="profile-card">
+          <div class="profile-top">
+            <div class="window-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="file-label">developer.js</span>
+          </div>
+
+          <div class="code-window">
+            <p><span class="code-purple">const</span> developer = {</p>
+            <p class="indent">
+              name: <span class="code-green">"Faadil Ilboudo"</span>,
+            </p>
+            <p class="indent">
+              school: <span class="code-green">"HESTIM"</span>,
+            </p>
+            <p class="indent">
+              location: <span class="code-green">"Casablanca"</span>,
+            </p>
+            <p class="indent">
+              status: <span class="code-green">"Learning"</span>,
+            </p>
+            <p class="indent">
+              passion: <span class="code-green">"Technology"</span>
+            </p>
+            <p>};</p>
+            <p class="code-comment">// Toujours apprendre. Toujours créer.</p>
+          </div>
+
+          <div class="profile-footer">
+            <span><i class="fa-solid fa-code"></i> Étudiant développeur</span>
+            <span class="live-indicator">● EN APPRENTISSAGE</span>
+          </div>
+        </div>
+
+        <div class="floating-badge badge-html">
+          <i class="fa-brands fa-html5"></i> HTML
+        </div>
+
+        <div class="floating-badge badge-css">
+          <i class="fa-brands fa-css3-alt"></i> CSS
+        </div>
+
+        <div class="floating-badge badge-js">
+          <i class="fa-brands fa-js"></i> JavaScript
+        </div>
+      </div>
+
+      <a href="#apropos" class="scroll-down">
+        <span>Défiler pour explorer</span>
+        <i class="fa-solid fa-arrow-down"></i>
+      </a>
+    </section>
+
+    <!-- À PROPOS -->
+    <section class="section container" id="apropos">
+      <div class="section-heading reveal">
+        <p class="eyebrow">QUI SUIS-JE ?</p>
+        <h2>À propos de <span class="gradient-text">moi.</span></h2>
+        <p>Mon parcours, ma vision et ce qui me motive.</p>
+      </div>
+
+      <div class="about-grid">
+        <article class="about-card glass-card reveal">
+          <div class="card-icon">
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+
+          <h3>Mon parcours</h3>
+          <p>
+            Je suis étudiant en première année de cycle préparatoire
+            informatique à HESTIM School, à Casablanca. Je construis
+            progressivement mes bases en informatique et en programmation.
+          </p>
+        </article>
+
+        <article class="about-card glass-card reveal">
+          <div class="card-icon">
+            <i class="fa-solid fa-lightbulb"></i>
+          </div>
+
+          <h3>Ma vision</h3>
+          <p>
+            Comprendre les technologies, résoudre des problèmes et
+            développer des solutions numériques utiles. Chaque projet
+            est une occasion d'apprendre et de progresser.
+          </p>
+        </article>
+
+        <article class="about-card glass-card reveal">
+          <div class="card-icon">
+            <i class="fa-solid fa-rocket"></i>
+          </div>
+
+          <h3>Mes objectifs</h3>
+          <p>
+            Renforcer mes compétences techniques, réaliser des projets
+            personnels de qualité et construire progressivement mon
+            profil dans le domaine informatique.
+          </p>
+        </article>
+      </div>
+
+      <div class="about-banner reveal">
+        <div>
+          <p class="eyebrow">MA PHILOSOPHIE</p>
+          <h3>Apprendre aujourd'hui.<br>
+            <span class="gradient-text">Construire demain.</span>
+          </h3>
+        </div>
+
+        <div class="banner-symbol">
+          <i class="fa-solid fa-terminal"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPÉTENCES -->
+    <section class="section container" id="competences">
+      <div class="section-heading reveal">
+        <p class="eyebrow">MON UNIVERS TECHNIQUE</p>
+        <h2>Mes <span class="gradient-text">compétences.</span></h2>
+        <p>Les technologies que j'explore et les domaines que je souhaite approfondir.</p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card glass-card reveal">
+          <div class="skill-icon html-icon">
+            <i class="fa-brands fa-html5"></i>
+          </div>
+          <h3>HTML5</h3>
+          <p>Structure des pages web</p>
+          <span class="skill-status">À personnaliser selon ton niveau</span>
+        </article>
+
+        <article class="skill-card glass-card reveal">
+          <div class="skill-icon css-icon">
+            <i class="fa-brands fa-css3-alt"></i>
+          </div>
+          <h3>CSS3</h3>
+          <p>Design et mise en page</p>
+          <span class="skill-status">À personnaliser selon ton niveau</span>
+        </article>
+
+        <article class="skill-card glass-card reveal">
+          <div class="skill-icon js-icon">
+            <i class="fa-brands fa-js"></i>
+          </div>
+          <h3>JavaScript</h3>
+          <p>Interactions web</p>
+          <span class="skill-status">À personnaliser selon ton niveau</span>
+        </article>
+
+        <article class="skill-card glass-card reveal">
+          <div class="skill-icon git-icon">
+            <i class="fa-brands fa-git-alt"></i>
+          </div>
+          <h3>Git & GitHub</h3>
+          <p>Versionnement et projets</p>
+          <span class="skill-status">En développement</span>
+        </article>
+      </div>
+
+      <p class="section-note">
+        Important : les technologies affichées sont des exemples pour
+        construire la maquette. Garde uniquement celles que tu connais
+        réellement et ajuste les niveaux à ton expérience.
+      </p>
+    </section>
+
+    <!-- PROJETS -->
+    <section class="section container" id="projets">
+      <div class="section-heading reveal">
+        <p class="eyebrow">CE QUE JE CONSTRUIS</p>
+        <h2>Mes <span class="gradient-text">projets.</span></h2>
+        <p>Une sélection de réalisations personnelles et académiques.</p>
+      </div>
+
+      <div class="project-filters reveal">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="javascript">JavaScript</button>
+        <button class="filter-btn" data-filter="academic">Académique</button>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card glass-card reveal" data-category="web">
+          <div class="project-cover cover-one">
+            <div class="mock-browser">
+              <div class="mock-top"><span></span><span></span><span></span></div>
+              <div class="mock-content">
+                <span class="mock-line"></span>
+                <span class="mock-line short"></span>
+                <div class="mock-blocks"><span></span><span></span></div>
+              </div>
+            </div>
+            <span class="project-number">01</span>
+          </div>
+
+          <div class="project-info">
+            <div class="project-meta">
+              <span>Développement web</span>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+            <h3>Mon portfolio</h3>
+            <p>
+              Un site personnel responsive pour présenter mon parcours,
+              mes compétences et mes réalisations.
+            </p>
+            <div class="tech-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <a class="project-link" href="#contact">
+              Ajouter le lien du projet <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card glass-card reveal" data-category="javascript">
+          <div class="project-cover cover-two">
+            <div class="task-preview">
+              <div class="task-title"><i class="fa-solid fa-list-check"></i> Task Manager</div>
+              <div class="task-item"><i class="fa-regular fa-circle-check"></i> Réviser les cours</div>
+              <div class="task-item"><i class="fa-regular fa-circle"></i> Pratiquer le code</div>
+              <div class="task-item"><i class="fa-regular fa-circle"></i> Préparer un projet</div>
+            </div>
+            <span class="project-number">02</span>
+          </div>
+
+          <div class="project-info">
+            <div class="project-meta">
+              <span>Application interactive</span>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+            <h3>Task Manager</h3>
+            <p>
+              Projet à réaliser : une application de gestion des tâches
+              avec ajout, validation et suppression.
+            </p>
+            <div class="tech-tags">
+              <span>JavaScript</span><span>DOM</span><span>CSS</span>
+            </div>
+            <a class="project-link" href="#contact">
+              Ajouter le lien du projet <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card glass-card reveal" data-category="academic">
+          <div class="project-cover cover-three">
+            <div class="terminal-preview">
+              <p><span>$</span> init project</p>
+              <p>Loading ideas...</p>
+              <p class="terminal-success">✓ Ready to build</p>
+            </div>
+            <span class="project-number">03</span>
+          </div>
+
+          <div class="project-info">
+            <div class="project-meta">
+              <span>Projet académique</span>
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </div>
+            <h3>Projet à venir</h3>
+            <p>
+              Un espace réservé à un futur projet de programmation,
+              réalisé dans le cadre de mes études ou en autonomie.
+            </p>
+            <div class="tech-tags">
+              <span>Programmation</span><span>Logique</span>
+            </div>
+            <a class="project-link" href="#contact">
+              Découvrir mon parcours <i class="fa-solid fa-arrow-right"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <p class="section-note">
+        Les deux derniers projets sont des idées de démonstration,
+        pas des réalisations confirmées. Remplace-les par tes vrais projets
+        et ajoute leurs liens GitHub lorsqu'ils seront disponibles.
+      </p>
+    </section>
+
+    <!-- PARCOURS -->
+    <section class="section container" id="parcours">
+      <div class="section-heading reveal">
+        <p class="eyebrow">MON ÉVOLUTION</p>
+        <h2>Mon <span class="gradient-text">parcours.</span></h2>
+      </div>
+
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">Actuellement</span>
+            <h3>Cycle préparatoire informatique</h3>
+            <p class="timeline-place">HESTIM School · Casablanca</p>
+            <p>
+              Formation en première année et développement progressif
+              de mes connaissances scientifiques et informatiques.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card">
+            <span class="timeline-date">En cours</span>
+            <h3>Développement personnel</h3>
+            <p class="timeline-place">Projets et apprentissage autonome</p>
+            <p>
+              Création de projets, amélioration de mes pratiques de code
+              et construction de mon portfolio.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section container" id="contact">
+      <div class="contact-box glass-card reveal">
+        <div class="contact-content">
+          <p class="eyebrow">TRAVAILLONS ENSEMBLE</p>
+          <h2>Une idée ?<br>
+            <span class="gradient-text">Parlons-en.</span>
+          </h2>
+          <p>
+            Tu souhaites échanger autour de l'informatique, d'un projet
+            ou d'une opportunité de collaboration ? Retrouvons-nous en ligne.
+          </p>
+
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/faadil-ilboudo-942772329/"
+               target="_blank" rel="noopener noreferrer">
+              <i class="fa-brands fa-linkedin"></i>
+              Mon profil LinkedIn
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
+            <a href="https://github.com/" target="_blank"
+               rel="noopener noreferrer">
+              <i class="fa-brands fa-github"></i>
+              Mon profil GitHub
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-decoration">
+          <i class="fa-regular fa-paper-plane"></i>
+          <span>Let's connect</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <a href="#accueil" class="logo">
+      <span class="logo-bracket">&lt;</span>FI<span class="logo-bracket">/&gt;</span>
+    </a>
+
+    <p>Conçu et développé par Faadil Ilboudo.</p>
+    <p>© <span id="currentYear"></span> · Tous droits réservés.</p>
+  </footer>
+
+  <button id="backToTop" class="back-to-top"
+          aria-label="Retour en haut">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+</body>
+</html>
